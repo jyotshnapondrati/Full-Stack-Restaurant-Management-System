@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Menu</title>
+</head>
+<body>
+<style>
+
+body {
+  background-image: url('../img/background.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+h2, .g-price {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.g-price {
+  margin: 8px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+  .container {
+    display: block;
+  }
+}
+.screen-togo, .screen-cart {
+  width: 375px;
+  max-height: 770px;
+  overflow: scroll;
+  border-radius: 25px;
+  background: white;
+  padding-top: 30px;
+  padding-left: 30px;
+  margin: 20px;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  background: #E4F0FD;
+  border-radius: 20px 0 0 20px;
+  margin: 30px 0;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.menu-item:nth-child(2n) {
+  background: #FBE4F0;
+}
+.menu-item:nth-child(3n) {
+  background: #F7F7FE;
+}
+.menu-item:nth-child(4n) {
+  background: #E4FDF1;
+}
+.menu-item img {
+  width: 150px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+.menu-item .add-button {
+  position: absolute;
+  border: none;
+  background: #6B00F5;
+  padding: 6px 20px 4px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  bottom: -10px;
+  left: 150px;
+  transition: all 0.3s;
+}
+.menu-item .add-button:hover {
+  background: #5815AE;
+}
+
+.menu-item-dets {
+  margin-left: 150px;
+  padding-bottom: 15px;
+}
+
+.menu-item-heading {
+  font-size: 18px;
+  margin: 10px 0 12px;
+}
+
+.screen-cart {
+  padding-right: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #D7D7F9;
+  animation: fadeIn 0.3s;
+}
+.cart-item:last-child {
+  border-bottom: 5px solid #D7D7F9;
+}
+.cart-item img {
+  width: 65px;
+}
+.cart-item .g-price {
+  font-size: 24px;
+}
+
+.cart-item-dets {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.cart-item-heading {
+  margin: 10px 0;
+}
+
+.cart-math-item {
+  margin: 5px 0;
+  font-weight: 700;
+}
+.cart-math-item span {
+  display: inline-block;
+  text-align: right;
+}
+.cart-math-item .cart-math-header {
+  width: 50%;
+}
+.cart-math-item .g-price {
+  width: 40%;
+}
+	body{
+background-image: url('https://64.media.tumblr.com/b2797bfe796912722b410178acfbcad9/tumblr_njlrc9dCAM1r955ylo1_1280.jpg');
+}
+
+</style>
+
+ <div class="container">
+  <div class="screen-togo">
+    <h2>To Go Menu</h2>
+    <ul class="menu-items">
+      <!--    Menu Item 1    -->
+      <li class="menu-item">
+        <img src="https://th.bing.com/th/id/R.9354d08e54f0b1673022534af6020415?rik=S8KsM%2fOtUHTXPw&riu=http%3a%2f%2fmegacable.blog%2fwp-content%2fuploads%2f2020%2f07%2fD%c3%8dAS-FESTIVOS-M%c3%81S-RAROS_PAPAS-A-LA-FRANCESA_MEGACABLE-scaled.jpg&ehk=8nqYOeSknly%2b15Pu1ZiNCSKDQOtGbEkhoKGgCWQ5TDs%3d&risl=&pid=ImgRaw&r=0" alt="French Fries with Ketchup" class="menu-image">
+        <div class="menu-item-dets">
+          <p class="menu-item-heading">French Fries with Ketchup</p>
+          <p class="g-price">223/-</p>
+        </div>
+        <button
+          class="add-button"
+          data-title="French Fies with Ketchup"
+          data-price="223">Add to Cart</button>
+      </li>
+      <!--    Menu Item 2    -->
+      <li class="menu-item">
+        <img src="https://www.deliciousmagazine.co.uk/wp-content/uploads/2015/04/summer-salmon.jpg" alt="Salmon and Vegetables" class="menu-image">
+        <div class="menu-item-dets">
+          <p class="menu-item-heading">Salmon and Vegetables</p>
+          <p class="g-price">899/-</p>
+        </div>
+        <button
+          class="add-button"
+          data-title="Salmon and Vegetables"
+          data-price="899">Add to Cart</button>
+      </li>
+      <!--    Menu Item 3    -->
+      <li class="menu-item">
+        <img src="https://i.pinimg.com/736x/73/61/96/736196d256490400f864180ebb219c34.jpg" alt="Spaghetti with Sauce" class="menu-image">
+        <div class="menu-item-dets">
+          <p class="menu-item-heading">Spaghetti with Sauce</p>
+          <p class="g-price">789/-</p>
+        </div>
+        <button
+          class="add-button"
+          data-title="Spaghetti with Sauce"
+          data-price="789">Add to Cart</button>
+      </li>
+      <!--    Menu Item 4    -->
+      <li class="menu-item">
+        <img src="https://wonkywonderful.com/wp-content/uploads/2019/06/vegetarian-tortellini-salad-2.jpg" alt="Tortellini" class="menu-image">
+        <div class="menu-item-dets">
+          <p class="menu-item-heading">Tortellini</p>
+          <p class="g-price">899/-</p>
+        </div>
+        <button 
+          class="add-button"
+          data-title="Tortellini"
+          data-price="899"
+          >Add to Cart</button>
+      </li>
+      <!--    Menu Item 5    -->
+      <li class="menu-item">
+        <img src="https://www.wellplated.com/wp-content/uploads/2016/05/BBQ-Chicken-Salad-recipe.jpg" alt="Chicken Salad" class="menu-image">
+        <div class="menu-item-dets">
+          <p class="menu-item-heading">Chicken Salad</p>
+          <p class="g-price">575/-</p>
+        </div>
+        <button
+          class="add-button"
+          data-title="Chicken Salad"
+          data-price="575">Add to Cart</button>
+      </li>
+    </ul>
+  </div>
+  <div class="screen-cart">
+    <h2>Your Cart</h2>
+    <!--  Cart Items -->
+    <ul class="cart-items">
+    </ul>
+    
+    <div class="cart-math">
+      <p>Add items to cart</p>
+    </div>
+  </div>
+</div> 
+
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'>
+let subtotal = 0;
+
+const calculateTax = subtotal => {
+  const tax = subtotal * 0.13;
+  const formattedTax = tax.toFixed(2);
+  return formattedTax;
+};
+
+const calculateTotal = subtotal => {
+  const tax = calculateTax(subtotal);
+  const total = parseFloat(subtotal) + parseFloat(tax);
+  const formattedTotal = total.toFixed(2);
+  return formattedTotal;
+};
+
+const getImgLink = title => {
+  let imgLink;
+  switch (title) {
+    case 'French Fies with Ketchup':
+      imgLink = 'https://assets.codepen.io/687837/plate__french-fries.png';
+      break;
+    case 'Salmon and Vegetables':
+      imgLink = 'https://assets.codepen.io/687837/plate__salmon-vegetables.png';
+      break;
+    case 'Spaghetti with Sauce':
+      imgLink = 'https://assets.codepen.io/687837/plate__spaghetti-meat-sauce.png';
+      break;
+    case 'Tortellini':
+      imgLink = 'https://assets.codepen.io/687837/plate__tortellini.png';
+      break;
+    case 'Chicken Salad':
+      imgLink = 'https://assets.codepen.io/687837/plate__chicken-salad.png';
+      break;
+    default:
+      imgLink = 'https://assets.codepen.io/687837/plate__chicken-salad.png';}
+
+  return imgLink;
+};
+
+$('.add-button').on('click', function () {
+  const title = $(this).data('title');
+  const price = $(this).data('price');
+  const imgLink = getImgLink(title);
+
+  const element = `
+    <li class="cart-item">
+      <img src="${imgLink}" alt="${title}">
+      <div class="cart-item-dets">
+        <p class="cart-item-heading">${title}</p>
+        <p class="g-price">$${price}</p>
+      </div>
+    </li>
+  `;
+  $('.cart-items').append(element);
+
+  subtotal = subtotal + price;
+
+  const formattedSubtotal = subtotal.toFixed(2);
+  const tax = calculateTax(subtotal);
+  const total = calculateTotal(subtotal);
+
+  $('.cart-math').html(`
+    <p class="cart-math-item">
+      <span class="cart-math-header">Subtotal:</span>
+      <span class="g-price subtotal">$${formattedSubtotal}</span>
+    </p>
+    <p class="cart-math-item">
+      <span class="cart-math-header">Tax:</span>
+      <span class="g-price tax">$${tax}</span>
+    </p>
+    <p class="cart-math-item">
+      <span class="cart-math-header">Total:</span>
+      <span class="g-price total">$${total}</span>
+    </p>
+  `);
+});
+
+</script>
+
+</body>
+</html>
